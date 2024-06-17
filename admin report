@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Report - Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .report-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+        }
+        .report-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .report-section {
+            margin-bottom: 20px;
+        }
+        .report-section label {
+            font-weight: bold;
+        }
+        .report-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .report-section table th,
+        .report-section table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h2>Admin Report</h2>
+
+        <div class="report-section">
+            <label>Booking Statistics</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Bookings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>145</td>
+                    </tr>
+                    <!-- Add more rows for other months -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-section">
+            <label>Revenue</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Revenue ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>18000</td>
+                    </tr>
+                    <!-- Add more rows for other months -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-section">
+            <label>Customer Feedback Summary</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Feedback Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10</td>
+                    </tr>
+                    <!-- Add more rows for other ratings -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
