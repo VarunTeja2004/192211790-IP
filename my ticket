@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ticket - Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .ticket-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .ticket-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .ticket-container .ticket-section {
+            margin-bottom: 20px;
+        }
+        .ticket-container .ticket-section label {
+            font-weight: bold;
+        }
+        .ticket-container .ticket-section p {
+            margin: 5px 0;
+        }
+        .ticket-container .qr-code {
+            display: flex;
+            justify-content: center;
+        }
+        .ticket-container .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <h2>My Ticket</h2>
+        <div class="ticket-section">
+            <label>Flight Information</label>
+            <p>Flight Number: <span id="flight-number">AA1234</span></p>
+            <p>Departure: <span id="departure">New York (JFK)</span></p>
+            <p>Arrival: <span id="arrival">Los Angeles (LAX)</span></p>
+            <p>Departure Date: <span id="departure-date">2024-07-01</span></p>
+            <p>Departure Time: <span id="departure-time">10:00 AM</span></p>
+        </div>
+        <div class="ticket-section">
+            <label>Passenger Information</label>
+            <p>Name: <span id="passenger-name">John Doe</span></p>
+            <p>Email: <span id="passenger-email">john.doe@example.com</span></p>
+            <p>Phone: <span id="passenger-phone">123-456-7890</span></p>
+        </div>
+        <div class="ticket-section qr-code">
+            <label>Boarding Pass</label>
+            <img src="https://via.placeholder.com/150" alt="QR Code" id="qr-code">
+        </div>
+    </div>
+</body>
+</html>
