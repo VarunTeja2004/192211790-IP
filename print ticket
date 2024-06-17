@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Ticket - Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .ticket-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .ticket-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ticket-header h2 {
+            margin: 5px 0;
+        }
+        .ticket-info {
+            margin-bottom: 10px;
+        }
+        .ticket-info label {
+            font-weight: bold;
+        }
+        .ticket-info p {
+            margin: 5px 0;
+        }
+        .ticket-barcode {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .ticket-barcode img {
+            width: 150px;
+            height: auto;
+        }
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            .ticket-container {
+                margin: 0;
+                border: none;
+            }
+            .ticket-barcode {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="ticket-header">
+            <h2>Flight Ticket</h2>
+            <p>Booking Reference: ABC123</p>
+        </div>
+        <div class="ticket-info">
+            <label>Passenger Name:</label>
+            <p>John Doe</p>
+        </div>
+        <div class="ticket-info">
+            <label>Flight Number:</label>
+            <p>AA123</p>
+        </div>
+        <div class="ticket-info">
+            <label>Departure:</label>
+            <p>New York (JFK)</p>
+        </div>
+        <div class="ticket-info">
+            <label>Arrival:</label>
+            <p>Los Angeles (LAX)</p>
+        </div>
+        <div class="ticket-info">
+            <label>Departure Date:</label>
+            <p>2024-07-01</p>
+        </div>
+        <div class="ticket-info">
+            <label>Departure Time:</label>
+            <p>10:00 AM</p>
+        </div>
+        <div class="ticket-barcode">
+            <img src="https://via.placeholder.com/150" alt="Barcode">
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
